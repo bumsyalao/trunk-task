@@ -37,6 +37,41 @@ The application should now be running on the specified port, and you can access 
 
   ✨ Transition job card states between "Pending," "In Progress," "Paused," and "Complete."
 
+### API Endpoints
+  The following API endpoints are available:
+
+  `/workstations`
+  - `GET /workstations` - Get a list of all workstations.
+  - `GET /workstations/:id` - Get a single workstation by ID.
+  - `POST /workstations` - Create a new workstation.
+  - `PUT /workstations/:id` - Update an existing workstation.
+  - `DELETE /workstations/:id` - Delete a workstation.
+
+  `/job-cards`
+  - `GET /job-cards` - Get a list of all job-cards.
+  - `GET /job-cards/:id` - Get a single job-card by ID.
+  - `POST /job-cards` - Create a new job-card.
+  - `PUT /job-cards/:id` - Update an existing job-card.
+  - `DELETE /job-cards/:id` - Delete a job-card.
+  - `PUT /job-cards/:id/transitions/:state` - Update an existing job-card state.
+
+  Request body of workstations:
+  ```
+      {
+        "name": "Workstation 1",
+        "location": "Location A"
+      }
+  ```
+
+  Request body of job-cards:
+  ```
+      {
+        "name": "Job Card 1",
+        "description": "This is the description of Job Card 1",
+        "workstationId": 7
+      }
+  ```
+
 > Time spent developing: 4hours.
 
 ## Contributing
