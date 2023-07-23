@@ -22,8 +22,8 @@ This project is a task management application that allows users to create job ca
     ```
 
 4. Run the application:
-
-`yarn start`
+  
+    `yarn start:dev`
 
 The application should now be running on the specified port, and you can access it at http://localhost:3000.
 
