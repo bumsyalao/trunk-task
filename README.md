@@ -1,6 +1,6 @@
 # Trunk-Task
 
-This project is a task management application that allows users to create job cards and manage workstations. The application is built using NestJS framework with a PostgreSQL database. The state of each task can be changed by updating its corresponding record in the database with one of four possible states. It uses Event-Driven Microservice approach, events are persisted within the database and they are used to loosely couple system components.
+This project is a task management application that allows users to create job cards and manage workstations. The application is built using NestJS framework with a PostgreSQL database. The state of each task can be changed by updating its corresponding record in the database with one of four possible states. I used Event-Driven Microservice approach, events are persisted within the database and they are used to loosely couple system components.
 
 ## Deployment
 - This Application is deployed on Heroku:
