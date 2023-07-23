@@ -16,7 +16,10 @@ This project is a task management application that allows users to create job ca
 2. Install dependencies using yarn:
   `yarn install`
 3. Create `.env` file in root directory with following contents:
-`DB_URL=`
+    ```
+    DB_URL=<your database url>
+    PORT=<port number to run server on>
+    ```
 
 4. Run the application:
 
